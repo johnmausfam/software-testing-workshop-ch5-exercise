@@ -1,7 +1,10 @@
 const { union_set } = require('../src/ch5_exercise');
 
 describe('test for union_set', () => {
-    const testData = [{ a: new Set([1, 2, 3]), b: new Set([1, 2, 3, 4, 5]), r: [1, 2, 3, 4, 5] }];
+    const testData = [
+        { a: new Set([1, 2, 3]), b: new Set([1, 2, 3, 4, 5]), r: [1, 2, 3, 4, 5] },
+        { a: new Set([1, 2, 3]), b: null, r: [1, 2, 3] }
+    ];
 
     it.each(testData)('測試結果為聯集Set', ({ a, b, r }) => {
         const test_a = a,
