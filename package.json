@@ -1,0 +1,18 @@
+{
+    "name": "@software-testing-workshop/ch5-exercise",
+    "version": "1.0.0",
+    "description": "2024 Software Testing Workshop chapter 5 exercise",
+    "main": "index.js",
+    "license": "MIT",
+    "scripts": {
+        "test": "jest",
+        "stryker-init": "stryker init",
+        "stryker-run": "stryker run"
+    },
+    "devDependencies": {
+        "jest": "^27.4.5",
+        "@stryker-mutator/core": "^7.1.1",
+        "@stryker-mutator/jest-runner": "^7.1.1",
+        "stryker-cli": "^1.0.2"
+    }
+}
